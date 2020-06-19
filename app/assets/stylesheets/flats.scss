@@ -41,6 +41,47 @@
   height: 30%;
 }
 
+.map {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.name-address {
+  background-color: #F8F9FA;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.description {
+  background-color: #F8F9FA;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.book {
+  background-color: #F8F9FA;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.details {
+  background-color: #F8F9FA;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.share {
+  background-color: #F8F9FA;
+}
+
+.margin-negative {
+  margin-top: -75px;
+}
+
 div {
   margin-bottom: 6px;
 }

@@ -1,0 +1,59 @@
+<div class="map" style="background-image: url('<%= @flat.picture_url %>')">
+</div>
+
+<div class="container margin-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="name-address">
+        <h1><%= @flat.name %> </h1>
+        <p><%= @flat.address %> </p>
+      </div>
+      <div class="description">
+        <p><%= @flat.description %></p>
+        <p>map</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="book">
+        <h4>Book this place!</h4>
+        <form action="">
+          <div class="flex">
+            <span class="px-2 my-2">From:</span>
+            <input type="text" class="form-control" placeholder="22-06-2020">
+          </div>
+          <div class="flex">
+            <span class="px-2 my-2">To:</span>
+            <input type="text" class="form-control" placeholder="30-06-2020">
+          </div>
+          <input type="sumbit" class="btn btn-success submit ml-5" value="Confirm">
+        </form>
+      </div>
+
+      <div class="details">
+        <h4>Details</h4>
+        <div class="flex">
+          <div class="flex" style="align-items: baseline">
+            <i class='fas fa-user-friends mr-2' style='font-size:16px;color:black'></i>
+            <p style="font-size: 20px"><%= @flat.number_of_guests %></p>
+          </div>
+          <div class="flex ml-3">
+            <p style="font-size: 20px"><stong>€</strong> <%= @flat.price_per_night %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="share flex" style="justify-content: space-between;">
+        <p>Share</p>
+        <div class="flex">
+          <i class="fab fa-facebook-square fa-2x mr-2"></i>
+          <i class="fab fa-twitter-square fa-2x mr-2"></i>
+          <i class="fab fa-pinterest-square fa-2x mr-2"></i>
+          <i class="fa fa-envelope-square fa-2x"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+

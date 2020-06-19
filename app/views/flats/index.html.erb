@@ -27,7 +27,7 @@
             </div>
             <div class="flex">
               <div class="flex">
-                <div class="flex">
+                <div class="flex" style="align-items: baseline">
                   <i class='fas fa-user-friends mr-2' style='font-size:16px;color:black'></i>
                   <%= flat.number_of_guests %>
                 </div>
@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="card-actions">
-            <a href="">More info</a> |
+            <%= link_to "More info", flat_path(flat)  %> |
             <a href="" class="text-warning">Edit</a> |
             <a href="" class="text-danger">Remove</a>
           </div>

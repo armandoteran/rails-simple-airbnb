@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="-col-6 m-auto">
+      <div class="form">
+        <h1>Edit Flat</h1>
+        <div>
+          <%= form_for @flat do |f| %>
+            <div>
+              <%= f.label :name, "Name" %>
+              <%= f.text_field :name %>
+            </div>
+
+            <div>
+              <%= f.label :address, "Address" %>
+              <%= f.text_field :address %>
+            </div>
+
+            <div>
+              <%= f.label :picture_url, "Picture_url" %>
+              <%= f.text_field :picture_url %>
+            </div>
+
+            <div>
+              <%= f.label :description, "Description" %>
+              <%= f.text_field :description %>
+            </div>
+
+            <div>
+              <%= f.label :number_of_guests, "Number of guests" %>
+              <%= f.text_field :number_of_guests %>
+            </div>
+
+
+            <div>
+              <%= f.label :price_per_night, "Price per night" %>
+              <%= f.text_field :price_per_night %>
+            </div>
+
+            <div>
+            <%= f.submit %>
+            </div>
+
+          <% end %>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
